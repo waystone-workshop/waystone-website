@@ -1,0 +1,15 @@
+{
+  "name": "@waystone-workshop/waystone-website",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "repository": "github:waystone-workshop/waystone-website",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "start": "npm run build && node scripts/serve.mjs",
+    "test": "npm run build && node --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "@waystone-workshop/design-system": "https://github.com/waystone-workshop/design-system/archive/refs/tags/v0.1.0.tar.gz"
+  }
+}
